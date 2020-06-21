@@ -42,7 +42,7 @@ const getSingleMrkData = async ({
     try {
         await client.connect();
         const result = await client.query(
-            'SELECT * FROM artists WHERE id = $1',
+            'SELECT * FROM mrk_data WHERE id = $1',
             params.id
         );
 
@@ -50,7 +50,7 @@ const getSingleMrkData = async ({
             response.status = 404;
             response.body = {
                 success: false,
-                message: `No artist found with id ${params.id}`,
+                message: `No data found with id ${params.id}`,
             };
             return;
         } else {
@@ -62,7 +62,7 @@ const getSingleMrkData = async ({
             });
             response.body = {
                 success: true,
-                message: 'Artist Retrived Successfully',
+                message: 'data Retrived Successfully',
                 data: artist,
             };
         }
