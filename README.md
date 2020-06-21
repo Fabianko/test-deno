@@ -3,7 +3,7 @@ My first proyect with DENO
 
 * first step: you need install deno and config PATH
 ```sh
-sudo apt-get install curl
+sudo apt-get install curl unzip node
 curl -fsSL https://deno.land/x/install/install.sh | sudo DENO_INSTALL=/usr/local sh
 ```
 * second step: install denon if you don´t want to restart server when you stay develop.
