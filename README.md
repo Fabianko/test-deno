@@ -1,5 +1,5 @@
 # test-deno
-My first proyect with DENO
+My first proyect with DENO and postgresql
 
 * first step: you need install deno and config PATH
 ```sh
