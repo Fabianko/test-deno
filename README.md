@@ -10,7 +10,9 @@ curl -fsSL https://deno.land/x/install/install.sh | sudo DENO_INSTALL=/usr/local
 ```sh
 deno install --allow-read --allow-run --allow-write -f --unstable https://deno.land/x/denon/denon.ts
 ```
-start with this command
+* third step: create and configure .env file with your postgresql server credentials, take .env.sample as an example
+
+* finally: start with this command
 ```sh
 denon run --allow-read --allow-env --allow-net server.ts
 ```
