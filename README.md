@@ -1,4 +1,4 @@
-# test-deno
+# test-deno api rest
 My first proyect with DENO and postgresql
 
 * first step: you need install deno and config PATH
